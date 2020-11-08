@@ -1,5 +1,5 @@
 ---
-title: "Proyecto diseño electrónico"
+title: "Proyecto Diseño Electr e Ins Industrial II"
 author: 
 - "Marcelo Jañez Vaz" 
 - "David Soto Marchena"
