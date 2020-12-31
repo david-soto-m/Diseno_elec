@@ -1,0 +1,108 @@
+* {
+  .serif{ font-family: "Ubuntu",serif;}
+  .sans-serif{ font-family: "Ubuntu",sans serif;}
+  .monospace {
+    font-family: "Ubuntu Mono", monospace;
+  }
+}
+pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+a:hover{
+	color: #00ff70;
+}
+
+a,
+a:focus,
+a:active
+a:visited{
+  color: #7F00FF;
+}
+
+u {
+  color: #00ff70;
+}
+
+body {
+  line-height: 1.85;
+}
+
+p{
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+h1,
+h2,
+h3,
+h4,{
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+small{
+  font-size: .707em;
+}
+
+h1{
+	color: #00FF7F;
+	margin-top: 0;
+	font-size: 3rem;
+}
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+html,
+body {
+  background-color: #000;
+  min-height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  color: #fafafa;
+  line-height: 1.45;
+  margin: 6rem auto 1rem;
+  max-width: 50rem;
+  padding: .25rem;
+}
+
+pre {
+  background-color: #333;
+}
+
+blockquote {
+  border-left: 3px solid #7F00FF;
+  padding-left: 1rem;
+}
+
+
+strong {
+	color: #01ff70;
+}
+
+table {
+	width:  100%;
+}
+th, td {
+  padding: 15px;
+}
+th{
+	background-color: #00ff70;
+}
+tr:nth-child(even) {background-color: #3F007F;} 
