@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def main():
-    print("Hola mundo")
+    print("Hola mundo 2")
 
 if __name__=="__main__":
     main()
