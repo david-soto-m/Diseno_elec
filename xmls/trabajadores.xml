@@ -1,0 +1,4 @@
+<Trabajadores> 
+	<Trabajador codigo="00001" view="True">Marcelo</Trabajador>
+	<Trabajador codigo="99999">David</Trabajador>
+</Trabajadores>
