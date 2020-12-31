@@ -23,7 +23,8 @@
 #
 
 
-
+import xmanage.trabajadores as T
+import xmanage.registro as R
 
 
 from time import sleep
@@ -96,6 +97,13 @@ def convertir_vector_decimal(vector, n_digitos):
 
     return codigo
 
+
+def convertir_vector_cadena(vector, n_digitos):
+    cadena = ""
+    for i in range(0, n_digitos):
+        cadena = cadena + str(vector[i])
+
+    return cadena
 
 
 
@@ -204,7 +212,7 @@ if __name__=="__main__":
     bucle=True
     while bucle:
         if estado_ant != estado:
-            print(estado)
+            print("-Estado: " + str(estado))
             estado_ant = estado
 
         # estado 0: espera inicial
@@ -270,14 +278,12 @@ if __name__=="__main__":
                 if event.direction  == "right"and event.action != "released":
                     num_mostrado = 0
                     print(codigo_trabajador)
-                    codigo_decimal = convertir_vector_decimal(codigo_trabajador, cont_codigo)
-                    print("Codigo decimal: " + str(codigo_decimal))
+                    #codigo_decimal = convertir_vector_decimal(codigo_trabajador, cont_codigo)
+                    codigo_cadena = convertir_vector_cadena(codigo_trabajador, cont_codigo)
+                    print("Cadena del código: " + codigo_cadena)
     ################################################
                     # Llamada a la funcion de comprobacion de si es trabajador:
-                    # (respuesta, nombre) = es_Trabajador(codigo_trabajador
-########## BORRAR:
-                    respuesta = True
-                    nombre = "nombre"
+                    (respuesta, nombre) = T.es_trabajador(codigo_cadena)
 
                     if respuesta:
                         cambiar_color_fondo(verde)
@@ -285,7 +291,19 @@ if __name__=="__main__":
                         sleep(1)
                         sense.show_message(nombre,scroll_speed=0.2, back_colour=negro, text_colour=verde)
     ################################################
+                        # Instante de entrada al edificio
+                        instante = localtime()
+                        ano = instante.tm_year
+                        mes = instante.tm_mon
+                        dia = instante.tm_mday
+                        hora = instante.tm_hour
+                        min = instante.tm_min
+                        FechaStr = str(dia)+"/"+str(mes)+"/"+str(ano)
+                        HoraStr = str(hora)
+                        MinStr = str(min)
+
                         # Llamada a la funcion de guardado en el registro de la informacion del trabajador
+                        R.nuevo_registro(codigo_cadena, FechaStr, HoraStr, MinStr)
 
                     else:
                         # Tomamos una foto al intruso
