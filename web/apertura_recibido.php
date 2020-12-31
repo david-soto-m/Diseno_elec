@@ -13,11 +13,11 @@
 	<?php
 	if ($_GET["Estado"]=="Si"){
 		echo "Dejando Pasar";
-// 		exec("sudo python3 abre.py");
+ 		exec("sudo python3 abre.py");
 		}
 	if ($_GET["Estado"]=="No"){
 		echo "Bloqueando";
-// 		exec("sudo python3 bloquea.py");
+ 		exec("sudo python3 bloquea.py");
 		}
 	echo "<br/>";
         ?>
