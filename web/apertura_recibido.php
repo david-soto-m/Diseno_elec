@@ -11,16 +11,13 @@
 		<link rel="stylesheet" href="web.css"/>
 	</head>
 	<?php
-//	echo "Empezando...";
-//	print $_REQUEST[Estado];
-	if ($_REQUEST[Estado]=="Si"){
+	if ($_GET["Estado"]=="Si"){
 		echo "Dejando Pasar";
 // 		exec("sudo python3 abre.py");
 		}
-	if ($_REQUEST[Estado]=="No"){
+	if ($_GET["Estado"]=="No"){
 		echo "Bloqueando";
-// 		exec("sudo python3 led_off.py");
-//		echo "Se ha apagado el led";
+// 		exec("sudo python3 bloquea.py");
 		}
 	echo "<br/>";
         ?>
