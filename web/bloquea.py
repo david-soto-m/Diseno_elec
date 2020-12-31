@@ -17,10 +17,11 @@ def cambiar_color_fondo(color):
 
 rojo = [255, 0, 50]
 negrom = [0,0,0]
+sense=SenseHat()
 for i in range(3):
 	scr=cambiar_color_fondo(verde)
 	sense.set_pixels(scr)
 	sleep(1.5)
 	scr=cambiar_color_fondo(negro)
 	sense.set_pixels(scr)
-	sleep(1.5) 
+	sleep(1.5)
