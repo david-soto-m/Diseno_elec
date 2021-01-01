@@ -11,15 +11,15 @@ pre {
   overflow-x: scroll;
 }
 
-a:hover{
+a:hover,
+a:focus{
 	color: #00ff70;
 }
 
 a,
-a:focus,
 a:active
 a:visited{
-  color: #7F00FF;
+  color: #FF7000;
 }
 
 u {
@@ -111,11 +111,13 @@ strong {
 
 table {
 	width:  100%;
+	border: 0px;
 }
 th, td {
   padding: 15px;
 }
 th{
 	background-color: #00ff70;
+	color:#000;
 }
 tr:nth-child(even) {background-color: #3F007F;} 

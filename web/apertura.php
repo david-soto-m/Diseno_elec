@@ -21,5 +21,6 @@
 		<input type="submit" name="Estado" value="Si"/>
 		<input type="submit" name="Estado" autofocus=true value="No"/>
 	</form>
+	<a href="../index.html">Directorio</a></br>
 </body>
 </html>

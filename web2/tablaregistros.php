@@ -10,7 +10,9 @@
 		</style>
 		<link rel="stylesheet" href="../web_resources/web.css"/>
 	</head>
+	<body>
 	<h1>Tabla de registros de empleados</h1>
+	<a href="../index.html">Directorio</a></br>
 	<?php
 		exec("sudo python3 lee_registros.py");
 		$a="table.html";
@@ -18,4 +20,5 @@
 		echo fread($file,filesize($a));
 		fclose($file);
 	?>
+	</body>
 <html/> 

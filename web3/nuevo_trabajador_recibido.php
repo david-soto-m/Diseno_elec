@@ -10,6 +10,7 @@
    </style>
    <link rel="stylesheet" href="../web_resources/web.css"/>
  </head>
+ <body>
 	<?php
 	$codigo=$_GET['codigo'];
 	$nombre=$_GET['nombre'];
@@ -19,8 +20,10 @@
 	if($a=="Invalido"){
 		header('Location: nuevo_trabajador.php?a=1'); 
 	}
-	echo $a;
+	echo "<h1>Valido</h1>";
 	?>
 
-<a href="nuevo_trabajador.php"> Volver </a>
+	<a href="nuevo_trabajador.php"> Volver </a></br>
+	<a href="../index.html">Directorio</a></br>
+</body>
 </html>

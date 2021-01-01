@@ -27,5 +27,6 @@
     </br>
     <input type="submit" name="Estado" autofocus=true value="Registrar y publicar en twitter"/>
 	</form>
+	<a href="../index.html">Directorio</a></br>
 </body>
 </html>

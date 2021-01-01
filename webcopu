@@ -4,3 +4,4 @@ sudo cp -r web /var/www/html
 sudo cp -r web2 /var/www/html
 sudo cp -r web_resources /var/www/html
 sudo cp -r web3 /var/www/html
+sudo cp index.html /var/www/html
