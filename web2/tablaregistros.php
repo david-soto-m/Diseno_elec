@@ -10,17 +10,5 @@
 		</style>
 		<link rel="stylesheet" href="../web_resources/web.css"/>
 	</head>
-	<?php
-	if ($_GET["Estado"]=="Si"){
-		echo "Dejando Pasar";
-		exec("sudo python3 abre.py");
-		}
-	if ($_GET["Estado"]=="No"){
-		echo "Bloqueando";
-		exec("sudo python3 bloquea.py");
-		}
-	echo "<br/>";
-        ?>
-
-<a href="apertura.php"> Volver </a>
-</html>
+	<h1>Tabla de registros de empleados</h1>
+<html/> 
