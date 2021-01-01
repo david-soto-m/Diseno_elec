@@ -18,8 +18,8 @@ import sys
 #########################################################
 # Lectura de la informacion de publicacion del trabajador
 
-print("hola")
-print(sys.argv)
+reparto=" ".join(sys.argv[1:]).split("-*-")
+print(reparto)
 #codigo = sys.argv[1]
 #nombre = sys.argv[2]
 #publicar = sys.argv[3]=="0"
