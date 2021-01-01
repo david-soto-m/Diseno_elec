@@ -23,7 +23,7 @@ codigo = reparto[0]
 nombre = reparto[1]
 publicar = reparto[2] =="0"
 respuesta = I.comprueba_valido(codigo)
-
+print("aQui")
 if respuesta:
 	I.nuevo_registro(codigo,nombre)
 	print("valido")
