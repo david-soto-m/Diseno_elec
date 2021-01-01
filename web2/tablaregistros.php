@@ -1,4 +1,4 @@
- <html>
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<title>Apertura de Puerta</title>
@@ -12,6 +12,10 @@
 	</head>
 	<h1>Tabla de registros de empleados</h1>
 	<?php
-		$a=exec("sudo python3 lee_registros.py")
+		exec("sudo python3 lee_registros.py");
+		$a="table.html";
+		$file = fopen($a, "r") or die("Unable to open file!");
+		echo fread($file,filesize($a));
+		fclose($file);
 	?>
 <html/> 
