@@ -1,11 +1,12 @@
 
 
 
-# ESTO TIENE QUE ESTAR MAL, porque "incoporaciones.py" están
-# en la carpeta xmanage, pero este archivo está en web3
-import xmanage.incorporaciones as I
+import xmanage.incorporaciones as I ###########################
 
 from twython import Twython
+
+
+
 
 
 
@@ -52,7 +53,3 @@ if respuesta:
 
     if publicar=="Si":
         publica_en_twitter(nombre)
-
-
-
-        

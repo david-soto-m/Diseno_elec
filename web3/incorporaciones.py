@@ -15,30 +15,25 @@ def comprueba_valido(codigo):
 			respuesta = False
 
 	if respuesta==True:
-		tree = ET.parse("xmls/trabajadores.xml")
+		tree = ET.parse("xmls/trabajadores.xml") ###############################################################
 		root = tree.getroot()
 		elemento=root.find("./Trabajador[@codigo='"+codigo+"']")
 		if elemento is not None:
 			respuesta = False
-			
+
 	return respuesta
 
 
 
 def nuevo_registro(codigo,nombre):
 	#leer archivo
-	archivo="xmls/trabajadores.xml"
+	archivo="xmls/trabajadores.xml" ###############################################################
 	tree = ET.parse(archivo)
 	root = tree.getroot()
 	#Crear registro
 	entrada=ET.SubElement(root,'Trabajador')
 	entrada.set("codigo",codigo)
-
-# FALTA: decir que "nombre" es el "text" de la entrada
-
-
-#	Fecha=ET.SubElement(entrada,"Fecha")
-#	Fecha.text=FechaStr
+	entrada.text = nombre
 
 	#Reescribir archivo
 	tree.write(archivo)
