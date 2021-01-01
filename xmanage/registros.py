@@ -2,9 +2,10 @@
 
 import xml.etree.ElementTree as ET
 
-archivo="../xmls/registro.xml"
-tree = ET.parse(archivo)
-root = tree.getroot()
+if __name__!="__main__":
+	archivo="xmls/registro.xml"
+	tree = ET.parse(archivo)
+	root = tree.getroot()
 
 def nuevo_registro(codigo,FechaStr,HoraStr,MinStr):
 	#Crear registro
@@ -21,4 +22,7 @@ def nuevo_registro(codigo,FechaStr,HoraStr,MinStr):
 	tree.write(archivo)
 
 if __name__=="__main__":
+	archivo="../xmls/registro.xml"
+	tree = ET.parse(archivo)
+	root = tree.getroot()
 	nuevo_registro("00001","31/12/20","12","04")
