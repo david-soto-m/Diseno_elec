@@ -15,7 +15,8 @@
 	$nombre=$_GET['nombre'];
 	$a=strcmp($_GET["Estado"],"Registrar y publicar en twitter");
 	$instucc="sudo python incorpora.py"." ".$codigo."-*-".$nombre."-*-".$a;
-	$a=exec($instucc);
+	$a=exec("sudo python incorpora.py");
+	
 	echo $a;
 	?>
 
