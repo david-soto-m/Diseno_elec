@@ -13,9 +13,10 @@
 	<?php
 	$codigo=$_GET['codigo'];
 	$nombre=$_GET['nombre'];
-	$a=strcmp($_GET["Estado"]=="Registrar y publicar en twitter");
-	echo $a,$codigo,$nombre;
+	$a=strcmp($_GET["Estado"],"Registrar y publicar en twitter");
+	echo $codigo,$nombre;
 // 	exec("sudo python incorpora.py");
+
 	?>
 
 <a href="nuevo_trabajador.html"> Volver </a>
