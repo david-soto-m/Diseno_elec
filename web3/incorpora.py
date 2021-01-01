@@ -19,7 +19,7 @@ def publica_en_twitter(nombre):
 # Lectura de la informacion de publicacion del trabajador
 
 print("hola")
-print(sys.argv)
+#print(sys.argv)
 #codigo = sys.argv[1]
 #nombre = sys.argv[2]
 #publicar = sys.argv[3]=="0"
