@@ -12,6 +12,7 @@
 	</head>
 	<h1>Tabla de registros de empleados</h1>
 	<?php
-		$a=exec("sudo python3 lee_registros.py")
+		$a=exec("sudo python3 lee_registros.py");
+		echo $a;
 	?>
 <html/> 
