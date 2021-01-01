@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Apertura de Puerta</title>
+		<title>Registros del Smartfonillo</title>
 		<style type="text/css">
 			code{white-space: pre-wrap;}
 			span.smallcaps{font-variant: small-caps;}
