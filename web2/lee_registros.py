@@ -2,10 +2,10 @@
 
 import xml.etree.ElementTree as ET
 
-trabajadores_XML = ET.parse("../xmls/trabajadores.xml")
+trabajadores_XML = ET.parse("/home/pi/Diseno_elec/xmls/trabajadores.xml")
 trabajadores = trabajadores_XML.getroot()
 
-registros_XML = ET.parse("../xmls/registro.xml")
+registros_XML = ET.parse("/home/pi/Diseno_elec/xmls/registro.xml")
 registros = registros_XML.getroot()
 
 
