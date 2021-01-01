@@ -26,8 +26,7 @@ respuesta = I.comprueba_valido(codigo)
 if respuesta:
 	I.nuevo_registro(codigo,nombre)
 	print("valido")
-	if publicar=="Si":
-		pass
+	if publicar:
 		publica_en_twitter(nombre)
 else:
 	print("Invalido")
