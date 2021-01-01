@@ -236,8 +236,6 @@ if __name__=="__main__":
 
         # estado 0: espera inicial
         if estado == 0:
-            cambiar_color_fondo(negro)
-            sense.set_pixels(PANTALLA)
             codigo_trabajador = []
             cont_codigo = 0
 
@@ -293,7 +291,9 @@ if __name__=="__main__":
                     print(codigo_trabajador)
                     cambiar_color_fondo(azul)
                     sense.set_pixels(PANTALLA)
-                    sleep(0.5)
+                    sleep(0.5)  
+                    cambiar_color_fondo(negro)
+                    sense.set_pixels(PANTALLA)
 
                 # Cuando el trabajador termina de meter el código:
                 if event.direction  == "right"and event.action != "released":
@@ -311,6 +311,8 @@ if __name__=="__main__":
                         sense.set_pixels(PANTALLA)
                         sleep(1)
                         sense.show_message(nombre,scroll_speed=0.2, back_colour=negro, text_colour=verde)
+                        cambiar_color_fondo(negro)
+                        sense.set_pixels(PANTALLA)
                         # Instante de entrada al edificio
                         instante = localtime()
                         ano = instante.tm_year
@@ -333,6 +335,8 @@ if __name__=="__main__":
                         # Tomamos una foto al intruso
                         print("Tomando foto al intruso")
                         sacar_foto_intruso()
+                        cambiar_color_fondo(negro)
+                        sense.set_pixels(PANTALLA)
 
                     # Volvemos al estado inicial
                     estado = 0
@@ -352,6 +356,8 @@ if __name__=="__main__":
             cambiar_color_fondo(naranja)
             sense.set_pixels(PANTALLA)
             sleep(0.5)
+            cambiar_color_fondo(negro)
+            sense.set_pixels(PANTALLA)
 
             enviar_notificacion_repartidor()
 
