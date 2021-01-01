@@ -3,7 +3,7 @@
 import xml.etree.ElementTree as ET
 
 
-tree = ET.parse("../xmls/trabajadores.xml")
+tree = ET.parse("xmls/trabajadores.xml")
 root = tree.getroot()
 	
 def es_trabajador(cadena):
@@ -14,4 +14,6 @@ def es_trabajador(cadena):
 		return(True,elemento.text)
 
 if __name__=="__main__":
+	tree = ET.parse("../xmls/trabajadores.xml")
+	root = tree.getroot()
 	print(es_trabajador("00001"))

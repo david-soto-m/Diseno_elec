@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+import xmanage.registros as R
+import xmanage.trabajadores as T
 def main():
-    print("Hola mundo 2")
+    R.nuevo_registro("00001","1/1/21","12","04")
+    print(T.es_trabajador("00001"))
+    print(T.es_trabajador("00002"))
 
 if __name__=="__main__":
     main()
