@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 def comprueba_valido(codigo):
 	respuesta = True
-	if len(nombre)!=5:
+	if len(codigo)!=5:
 		respuesta=False
 	else:
 		try:
@@ -12,6 +12,7 @@ def comprueba_valido(codigo):
 			respuesta = False
 	if respuesta==True:
 		tree = ET.parse("/home/pi/Diseno_elec/xmls/trabajadores.xml")
+		#tree = ET.parse("../xmls/trabajadores.xml")
 		root = tree.getroot()
 		elemento=root.find("./Trabajador[@codigo='"+codigo+"']")
 		if elemento is not None:
@@ -21,6 +22,7 @@ def comprueba_valido(codigo):
 def nuevo_registro(codigo,nombre):
 	#leer archivo
 	archivo="/home/pi/Diseno_elec/xmls/trabajadores.xml"
+	#archivo="../xmls/trabajadores.xml"
 	tree = ET.parse(archivo)
 	root = tree.getroot()
 	#Crear registro

@@ -13,7 +13,7 @@ def publica_en_twitter(nombre):
 	OAUTH_TOKEN_SECRET = "VSIDNE824r14dpNQ5Hsa8lQfdP1xH9BhCOxc6AwQpxiyd"
 	twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 	Texto = nombre + " se ha incorporado a nuestra empresa. ¡Bienvenido!"
-	Publicación del tweet
+	#Publicación del tweet
 	twitter.update_status(status=Texto)
 #########################################################
 # Lectura de la informacion de publicacion del trabajador
@@ -27,6 +27,7 @@ if respuesta:
 	I.nuevo_registro(codigo,nombre)
 	print("valido")
 	if publicar=="Si":
+		pass
 		publica_en_twitter(nombre)
 else:
 	print("Invalido")
