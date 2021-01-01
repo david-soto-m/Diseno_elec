@@ -2,6 +2,7 @@
 
 import incorporaciones as I 
 from twython import Twython
+import sys
 
 #########################################################
 def publica_en_twitter(nombre):
@@ -16,24 +17,18 @@ def publica_en_twitter(nombre):
 	twitter.update_status(status=Texto)
 #########################################################
 # Lectura de la informacion de publicacion del trabajador
-fichero = open("nombre.txt", "r")
-nombre = fichero.readline()
-fichero.close
 
-fichero = open("codigo.txt", "r")
-codigo = fichero.readline()
-fichero.close
+print(sys.argv)
+#codigo = sys.argv[1]
+#nombre = sys.argv[2]
+#publicar = sys.argv[3]=="0"
 
-fichero = open("publicar.txt", "r")
-publicar = fichero.readline()
-fichero.close
+#respuesta = I.comprueba_valido(codigo)
 
-respuesta = I.comprueba_valido()
-
-if respuesta:
-	I.nuevo_registro(codigo,nombre)
+#if respuesta:
+	#I.nuevo_registro(codigo,nombre)
 	
-	if publicar=="Si":
-		publica_en_twitter(nombre)
-else:
-	print("Invalido")
+	#if publicar=="Si":
+		#publica_en_twitter(nombre)
+#else:
+	#print("Invalido")
