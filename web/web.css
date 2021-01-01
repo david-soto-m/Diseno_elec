@@ -34,7 +34,17 @@ p{
   font-size: 1rem;
   margin-bottom: 1.3rem;
 }
-
+input{
+	border-color: #00FF7F;
+	border-radius: 4px:
+	border: 2px;
+	width: 50%;
+	background-color: #000;
+	color: #fafafa;
+}
+input:focus{
+	border-color:#7F00FF;
+}
 h1,
 h2,
 h3,
