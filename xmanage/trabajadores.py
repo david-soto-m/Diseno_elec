@@ -3,17 +3,12 @@
 import xml.etree.ElementTree as ET
 
 
-tree = ET.parse("xmls/trabajadores.xml")
-root = tree.getroot()
 	
 def es_trabajador(cadena):
+	tree = ET.parse("xmls/trabajadores.xml")
+	root = tree.getroot()
 	elemento=root.find("./Trabajador[@codigo='"+cadena+"']")
 	if elemento is None:
 		return(False,"")
 	else:
 		return(True,elemento.text)
-
-if __name__=="__main__":
-	tree = ET.parse("../xmls/trabajadores.xml")
-	root = tree.getroot()
-	print(es_trabajador("00001"))
