@@ -6,7 +6,7 @@ import sys
 
 #################################################
 def publica_en_twitter(nombre):
-	Twitter: @RpiMarcelo
+	#Twitter: @RpiMarcelo
 	APP_KEY = "wvbENKZWzWGbBnV1O93z9BaKW"
 	APP_SECRET = "qK76rTuHGwTkWukZvt1ce6zVwpI0yoKxDz1qQBgSXpGaHKiHac"
 	OAUTH_TOKEN = "1334992616853794817-CmrY3VgiifqRItNQAMFhQCEEFYROY5"
@@ -23,7 +23,6 @@ codigo = reparto[0]
 nombre = reparto[1]
 publicar = reparto[2] =="0"
 respuesta = I.comprueba_valido(codigo)
-print("aQui")
 if respuesta:
 	I.nuevo_registro(codigo,nombre)
 	print("valido")
