@@ -39,15 +39,15 @@ input{
 	border: 3px solid;
 	box-sizing: border-box;
 	width: 30%;
-	height: 10%;
+	height: 5%;
 	margin:10px;
 	background-color: #000;
 	border-color: #00FF7F;
 	color: #fafafa;
 }
-/*input:focus{
+input:focus{
 	border-color:#7F00FF;
-}*/
+}
 h1,
 h2,
 h3,
