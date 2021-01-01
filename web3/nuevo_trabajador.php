@@ -14,7 +14,7 @@
 	<h1>Introduzca los datos del nuevo trabajador</h1>
 	</br>
 	<?php 
-		 if(S_GET["a"]=="1"){
+		 if($_GET["a"]=="1"){
 		 echo("ERROR:Código ya usado");
 		 }
 	?>

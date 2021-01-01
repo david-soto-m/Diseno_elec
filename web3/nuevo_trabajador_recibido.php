@@ -10,43 +10,12 @@
    </style>
    <link rel="stylesheet" href="../web_resources/web.css"/>
  </head>
- <?php
-  $codigo=$_GET['codigo'];
-  $nombre=$_GET['nombre'];
-   if ($_GET["Estado"]=="Registrar y publicar en twitter"){
-     	echo "Registrando y publicando trabajador";
-     	$fp=fopen("codigo_trabajador.txt","w");
-     	fputs($fp,$codigo);
-     	fclose($fp);
-
-      $fp=fopen("nombre_trabajador.txt","w");
-      fputs($fp,$nombre);
-      fclose($fp);
-
-      $fp=fopen("publicar.txt","w");
-      fputs($fp,"Si");
-      fclose($fp);
-
-
-     	exec("sudo python incorpora.py");
-     }
-   if ($_GET["Estado"]=="Registrar"){
-     echo "Registrando trabajador";
-     $fp=fopen("codigo.txt","w");
-     fputs($fp,$codigo);
-     fclose($fp);
-
-     $fp=fopen("nombre.txt","w");
-     fputs($fp,$nombre);
-     fclose($fp);
-
-     $fp=fopen("publicar.txt","w");
-     fputs($fp,"No");
-     fclose($fp);
-
-
-     exec("sudo python incorpora.py");
-       ?>
+	<?php
+	$codigo=$_GET['codigo'];
+	$nombre=$_GET['nombre'];
+	echo $_GET["Estado"]=="Registrar y publicar en twitter";
+// 	exec("sudo python incorpora.py");
+	?>
 
 <a href="nuevo_trabajador.html"> Volver </a>
 </html>
