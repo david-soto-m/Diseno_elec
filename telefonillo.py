@@ -50,6 +50,8 @@
 
 
 
+
+
 #
 
 #
@@ -71,6 +73,9 @@ import xmanage.registros as R
 from time import sleep
 
 from time import localtime
+
+
+
 
 
 
@@ -568,8 +573,6 @@ if __name__=="__main__":
 
                     num_mostrado = 0
 
-                    print(codigo_trabajador)
-
                     #codigo_decimal = convertir_vector_decimal(codigo_trabajador, cont_codigo)
 
                     codigo_cadena = convertir_vector_cadena(codigo_trabajador, cont_codigo)
@@ -643,7 +646,7 @@ if __name__=="__main__":
 
                         DIR = "./fotos_intrusos"
 
-                        cont_instrusos = len(os.listdir(DIR)) + 1
+                        cont_instrusos = len(os.listdir(DIR))
 
                         # Capturamos la imagen y la guardamos en el fichero indicado
 
