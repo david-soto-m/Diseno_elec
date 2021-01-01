@@ -16,9 +16,9 @@
 	$a=strcmp($_GET["Estado"],"Registrar y publicar en twitter");
 	$instucc="sudo python3 incorpora.py"." ".$codigo."-*-".$nombre."-*-".$a;
 	$a=exec($instucc);
-// 	if($a=="Invalido"){
-// 	header(header('Location: nuevo_trabajador.php?a=1'); 
-// 	}
+	if($a=="Invalido"){
+		header('Location: nuevo_trabajador.php?a=1'); 
+	}
 	echo $a;
 	?>
 
