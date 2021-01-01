@@ -1,6 +1,7 @@
 #!/usr/bin/python3 
 
 import xml.etree.ElementTree as ET
+
 trabajadores_XML = ET.parse("/home/pi/Diseno_elec/xmls/trabajadores.xml")
 #trabajadores_XML = ET.parse("../xmls/trabajadores.xml")
 trabajadores = trabajadores_XML.getroot()
@@ -11,7 +12,6 @@ registros = registros_XML.getroot()
 
 f = open("table.html", "w")
 for trabajador in trabajadores:
-	
 	f.write("<h2>"+trabajador.text+"</h2>\n")
 	f.write('<table>\n<thead>\n<tr class="header">\n<th>Hora</th>\n<th>Fecha</th>\n</tr>\n</thead>')
 	i=0
@@ -21,13 +21,15 @@ for trabajador in trabajadores:
 			f.write("<tr class=\"even\">\n")
 		else:
 			f.write("<tr class=\"odd\">\n")
-		fecha=entrada.find("Fecha").text
-		hora=entrada.find("Hora").text
-		minu=entrada.find("Min").text
+		sep="/"
+		fecha=sep.join([fec.zfill(2) for fec in entrada.find("Fecha").text.split(sep)])
+		hora=entrada.find("Hora").text.zfill(2)
+		minu=entrada.find("Min").text.zfill(2)
 		f.write("<td>"+hora+":"+minu+"</td>\n")
 		f.write("<td>"+fecha+"</td>\n")
 		f.write("</tr>\n")
 		i+=1
 	f.write("</tbody>\n")
 	f.write("</table>")
+
 f.close()
