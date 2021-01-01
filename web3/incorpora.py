@@ -19,11 +19,10 @@ import sys
 # Lectura de la informacion de publicacion del trabajador
 
 reparto=" ".join(sys.argv[1:]).split("-*-")
-print(reparto)
-#codigo = sys.argv[1]
-#nombre = sys.argv[2]
-#publicar = sys.argv[3]=="0"
-
+codigo = reparto[0]
+nombre = reparto[1]
+publicar = reparto[3] =="0"
+print(codigo,nombre,publicar)
 #respuesta = I.comprueba_valido(codigo)
 
 #if respuesta:
