@@ -10,6 +10,7 @@
 		</style>
 		<link rel="stylesheet" href="../web_resources/web.css"/>
 	</head>
+	<body>
 	<?php
 	if ($_GET["Estado"]=="Si"){
 		echo "Dejando Pasar";
@@ -21,6 +22,6 @@
 		}
 	echo "<br/>";
         ?>
-
-<a href="apertura.php"> Volver </a>
+	<a href="../index.html">Directorio</a></br>
+	</head>
 </html>
