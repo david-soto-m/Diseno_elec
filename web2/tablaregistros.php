@@ -11,4 +11,7 @@
 		<link rel="stylesheet" href="../web_resources/web.css"/>
 	</head>
 	<h1>Tabla de registros de empleados</h1>
+	<?php
+		$a=exec("sudo python3 lee_registros.py")
+	?>
 <html/> 
