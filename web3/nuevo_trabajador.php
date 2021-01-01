@@ -12,7 +12,12 @@
 </head>
 <body>
 	<h1>Introduzca los datos del nuevo trabajador</h1>
-  </br>
+	</br>
+	<?php 
+		 if(S_GET["a"]=="1"){
+		 echo("ERROR:Código ya usado");
+		 }
+	?>
 	<form action="nuevo_trabajador_recibido.php" method="get">
     Nombre completo:<input type="text" name="nombre" value="">
     </br>
