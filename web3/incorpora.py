@@ -21,7 +21,7 @@ import sys
 reparto=" ".join(sys.argv[1:]).split("-*-")
 codigo = reparto[0]
 nombre = reparto[1]
-publicar = reparto[3] =="0"
+publicar = reparto[2] =="0"
 print(codigo,nombre,publicar)
 #respuesta = I.comprueba_valido(codigo)
 
