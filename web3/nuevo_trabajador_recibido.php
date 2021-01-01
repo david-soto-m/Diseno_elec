@@ -13,7 +13,7 @@
 	<?php
 	$codigo=$_GET['codigo'];
 	$nombre=$_GET['nombre'];
-	$a=$_GET["Estado"]=="Registrar y publicar en twitter";
+	$a=strcmp($_GET["Estado"]=="Registrar y publicar en twitter");
 	echo $a,$codigo,$nombre;
 // 	exec("sudo python incorpora.py");
 	?>
