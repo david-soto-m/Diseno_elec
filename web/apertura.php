@@ -8,7 +8,7 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="web.css"/>
+  <link rel="stylesheet" href="../web_resources/web.css"/>
 </head>
 <body>
 	<h1>¿Tiene esta persona permiso para entrar?</h1>
