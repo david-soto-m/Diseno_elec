@@ -15,7 +15,7 @@
 	</br>
 	<?php 
 		 if($_GET["a"]=="1"){
-		 echo("<p style=\"color: red;\">ERROR:Código inválido</p>");
+		 echo("<p style=\"color: red;\">ERROR: Código inválido</p>");
 		 }
 	?>
 	<form action="nuevo_trabajador_recibido.php" method="get">

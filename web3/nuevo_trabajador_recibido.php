@@ -20,7 +20,7 @@
 	if($a=="Invalido"){
 		header('Location: nuevo_trabajador.php?a=1'); 
 	}
-	echo "<h1>Valido</h1>";
+	echo "<h1>Válido</h1>";
 	?>
 
 	<a href="nuevo_trabajador.php"> Volver </a></br>
