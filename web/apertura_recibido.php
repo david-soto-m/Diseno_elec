@@ -13,15 +13,14 @@
 	<body>
 	<?php
 	if ($_GET["Estado"]=="Si"){
-		echo "Dejando Pasar";
+		echo "<h1>Dejando Pasar</h1>";
 		exec("sudo python3 abre.py");
 		}
 	if ($_GET["Estado"]=="No"){
-		echo "Bloqueando";
+		echo "<h1>Bloqueando</h1>";
 		exec("sudo python3 bloquea.py");
 		}
-	echo "<br/>";
-        ?>
+    ?>
 	<a href="../index.html">Directorio</a></br>
 	</head>
 </html>

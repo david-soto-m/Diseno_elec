@@ -1,9 +1,7 @@
 * {
-  .serif{ font-family: "Ubuntu",serif;}
-  .sans-serif{ font-family: "Ubuntu",sans serif;}
-  .monospace {
-    font-family: "Ubuntu Mono", monospace;
-  }
+  .serif{ font-family: "Ubuntu",sans-serif;}
+  .sans-serif{ font-family: "Ubuntu",sans-serif;}
+  .monospace {font-family: "Ubuntu Mono", monospace;}
 }
 pre {
   padding: .5rem;
