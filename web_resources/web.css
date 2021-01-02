@@ -1,6 +1,5 @@
-body {
+h1,table,tr,tb,a,body {
   font-family: "Ubuntu",Arial,sans-serif;
-  .monospace {font-family: "Ubuntu Mono","Lucida Console", monospace;}
 }
 pre {
   padding: .5rem;
