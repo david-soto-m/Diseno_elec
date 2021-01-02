@@ -1,5 +1,5 @@
-h1,table,tr,tb,a,body {
-  font-family: "Ubuntu",Arial,sans-serif;
+body {
+  font-family: "ubuntu",Helvetica,Arial,sans-serif;
 }
 pre {
   padding: .5rem;
