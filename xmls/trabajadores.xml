@@ -1,4 +1,5 @@
 <Trabajadores> 
 	<Trabajador codigo="00001" view="True">Marcelo</Trabajador>
 	<Trabajador codigo="99999">David</Trabajador>
-<Trabajador codigo="12345">david manuel</Trabajador><Trabajador codigo="12333">Pepe Ramo</Trabajador><Trabajador codigo="12122">Superpan</Trabajador><Trabajador codigo="12121">Pepit P</Trabajador></Trabajadores>
+	<Trabajador codigo="12333">Jose</Trabajador>
+</Trabajadores>
