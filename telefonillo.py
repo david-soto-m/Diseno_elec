@@ -120,7 +120,7 @@ def sacar_foto_intruso():
     # Capturamos la imagen y la guardamos en el fichero indicado
     nombre_archivo = "foto_intruso_" + str(cont_instrusos)
     nombre_completo = DIR + "/" + nombre_archivo + '.jpg'
-    camera.capture(DIR + "/" + nombre_archivo + '.jpg')
+    camera.capture(nombre_completo)
 
     # Cierre de la ventana de previsualizacion
     camera.stop_preview()
@@ -222,6 +222,11 @@ def enviar_notificacion_repartidor():
     server.quit()
 
 
+    
+    
+################################################################################
+
+
 if __name__=="__main__":
     cambiar_color_fondo(gris)
     sense.set_pixels(PANTALLA)
@@ -274,13 +279,11 @@ if __name__=="__main__":
             events = sense.stick.get_events()
             for event in events:
                 if event.direction  == "down" and event.action != "released":
-                    num_mostrado = num_mostrado -1
+                    num_mostrado = num_mostrado - 1
                     if num_mostrado==-1:
                         num_mostrado = 9
                 if event.direction  == "up" and event.action != "released":
-
                     num_mostrado = num_mostrado + 1
-
                     if num_mostrado==10:
                         num_mostrado = 0
 
